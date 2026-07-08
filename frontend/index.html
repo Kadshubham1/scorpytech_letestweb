@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scorpy Tech | Next-Gen Technical Internships & Training</title>
+  <meta name="description" content="Accelerate your career with industry-focused internships, real-world projects, AI/ML workshops, and expert mentorship from Scorpy Tech.">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Ambient Glow Background Blobs Removed for Corporate Look -->
+  <!-- Header / Navigation -->
+  <header class="navbar-container">
+    <div class="navbar-content">
+      <a href="#" class="nav-logo" id="nav-logo-btn" style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Scorpy Tech Logo" style="height: 64px; width: auto; object-fit: contain; mix-blend-mode: multiply;">
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#technologies" class="nav-link">Tech Stack</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#faqs" class="nav-link">FAQs</a>
+        <a href="#blogs" class="nav-link">Blogs</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-nav open-modal-btn" id="nav-apply-btn">Apply Now</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobile-nav">
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#technologies" class="mobile-nav-link">Tech Stack</a>
+      <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+      <a href="#faqs" class="mobile-nav-link">FAQs</a>
+      <a href="#blogs" class="mobile-nav-link">Blogs</a>
+      <button class="btn btn-primary open-modal-btn w-full text-center" style="margin-top: 1rem;">Apply Now</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-text-content">
+        <div class="hero-badge">
+          <i data-lucide="sparkles" class="icon-sm"></i>
+          <span>Launch Your Tech Career</span>
+        </div>
+        <h1 class="hero-title">
+          Build the Future of <br>
+          <span class="gradient-text">Technology</span>
+        </h1>
+        <p class="hero-description">
+          Gain hands-on experience with industry-grade live projects, cutting-edge AI/ML workshops, and expert mentorship. Take the first step from academic concepts to professional excellence.
+        </p>
+        <div class="hero-cta-group">
+          <button class="btn btn-primary btn-lg open-modal-btn" id="hero-apply-btn">Start Your Internship</button>
+          <a href="#services" class="btn btn-secondary btn-lg">Explore Programs</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual-content">
+        <div class="hero-card-stack">
+          <div class="hero-card card-top glass-card">
+            <div class="card-glow"></div>
+            <div class="card-header-visual">
+              <span class="pulse-dot"></span>
+              <span class="tag-status">Live Project</span>
+            </div>
+            <h3>Smart Attendance System</h3>
+            <p>Developing AI facial recognition pipeline using TensorFlow and React Native...</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 82%"></div>
+            </div>
+            <div class="card-footer-visual">
+              <span>Progress: 82%</span>
+              <span class="members-avatars">🔥</span>
+            </div>
+          </div>
+          <div class="hero-card card-bottom glass-card">
+            <div class="tech-tag-group">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">AWS</span>
+              <span class="tech-pill">React</span>
+            </div>
+            <p class="status-msg">🚀 Guided by Mentors from Top Tech Companies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section (Dynamic) -->
+  <section class="partners-section" id="partners">
+    <div class="container">
+      <p class="partners-title">Trusted by Students from Premier Universities</p>
+      <div class="partners-carousel">
+        <div class="partners-track" id="partners-track">
+          <!-- Dynamically filled -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section (Dynamic) -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid" id="stats-grid">
+        <!-- Dynamically filled -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section (Dynamic) -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our <span class="gradient-text">Services</span> & Programs</h2>
+        <p class="section-subtitle">We offer structured, practical learning models tailored to launch your professional journey.</p>
+      </div>
+      
+      <div class="services-grid" id="services-grid">
+        <!-- Dynamically filled -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section (Dynamic) -->
+  <section class="technologies-section" id="technologies">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Learn Modern <span class="gradient-text">Technologies</span></h2>
+        <p class="section-subtitle">Master the developer stacks requested by leading tech firms worldwide.</p>
+      </div>
+      
+      <div class="tech-grid" id="tech-grid">
+        <!-- Dynamically filled -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Dynamic) -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Student <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Explore the high-caliber systems developed by our interns during their programs.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters-container" id="filters-container">
+        <!-- Dynamically filled categories -->
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Dynamically filled -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (Dynamic) -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What Our <span class="gradient-text">Students Say</span></h2>
+        <p class="section-subtitle">Read feedback from our alumni who successfully stepped into their dream roles.</p>
+      </div>
+
+      <div class="testimonials-grid" id="testimonials-grid">
+        <!-- Dynamically filled -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Section (Dynamic) -->
+  <section class="faqs-section" id="faqs">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p class="section-subtitle">Have queries about our training or certificates? Find quick answers below.</p>
+      </div>
+
+      <div class="faqs-list" id="faqs-list">
+        <!-- Dynamically filled -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Blogs Section (Dynamic) -->
+  <section class="blogs-section" id="blogs">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Latest from Our <span class="gradient-text">Blog</span></h2>
+        <p class="section-subtitle">Keep up with the latest tech trends, guides, and career preparation insights.</p>
+      </div>
+
+      <div class="blogs-grid" id="blogs-grid">
+        <!-- Dynamically filled -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & Newsletter -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="display: flex; align-items: center; margin-bottom: 1rem;">
+          <img src="logo.png" alt="Scorpy Tech Logo" style="height: 80px; width: auto; object-fit: contain; mix-blend-mode: multiply;">
+        </a>
+        <p class="footer-desc">
+          Empowering future software engineers and tech leaders with practical learning pathways, live mentor support, and verified project experience.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="#" class="social-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#technologies">Tech Stack</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h3>Subscribe to Newsletter</h3>
+        <p>Stay updated with our new batch openings, workshops, and placement guides.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <div class="input-wrapper">
+            <input type="email" placeholder="Enter your email address" required id="newsletter-email">
+            <button type="submit" class="btn btn-primary" id="newsletter-submit-btn">
+              <span class="btn-text">Subscribe</span>
+              <span class="spinner" id="newsletter-spinner"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 Scorpy Tech. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Internship Application Modal -->
+  <div class="modal-backdrop" id="application-modal">
+    <div class="modal-content glass-card">
+      <button class="modal-close" id="close-modal-btn" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+      
+      <div class="modal-header">
+        <h2>Apply for <span class="gradient-text">Internship</span></h2>
+        <p>Complete the form below and our recruitment team will get in touch with you.</p>
+      </div>
+      
+      <form class="modal-form" id="internship-form">
+        <div class="form-group">
+          <label for="full_name">Full Name</label>
+          <input type="text" id="full_name" required placeholder="e.g. Sneha Patil">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required placeholder="e.g. sneha@example.com">
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required placeholder="e.g. +91 9876543210">
+        </div>
+        
+        <div class="form-group">
+          <label for="interest">Area of Interest</label>
+          <select id="interest" required>
+            <option value="" disabled selected>Select your specialization</option>
+            <option value="AI/ML">AI / Machine Learning</option>
+            <option value="Full Stack">Full Stack Development</option>
+            <option value="Mobile">Mobile App Development</option>
+            <option value="IoT">Internet of Things (IoT)</option>
+            <option value="Cloud">Cloud & DevOps</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Cover Note / Message</label>
+          <textarea id="message" rows="3" placeholder="Tell us briefly about your background or motivation..."></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary w-full" id="internship-submit-btn">
+          <span class="btn-text">Submit Application</span>
+          <span class="spinner" id="internship-spinner"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript Application Entry -->
+  <script src="app.js"></script>
+</body>
+</html>
