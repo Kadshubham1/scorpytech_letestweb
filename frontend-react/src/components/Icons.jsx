@@ -2,7 +2,9 @@ import React from 'react';
 import { 
   Users, CheckCircle, Award, Cpu, GraduationCap, Briefcase, 
   Brain, Code, Calendar, Terminal, Coffee, Binary, Atom, 
-  Server, Database, Cloud, CloudLightning
+  Server, Database, Cloud, CloudLightning,
+  Globe, Smartphone, Wifi, Box, Shield, BarChart, Headphones,
+  FileText, Star, Lightbulb, Search, Settings, CheckSquare, Monitor
 } from 'lucide-react';
 
 export const Linkedin = (props) => (
@@ -25,6 +27,13 @@ export const Twitter = (props) => (
   </svg>
 );
 
+import { 
+  SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, SiPython, 
+  SiFastapi, SiSpringboot, SiFlutter, SiPostgresql, SiMongodb, 
+  SiDocker, SiKubernetes
+} from 'react-icons/si';
+import { FaJava, FaAws } from 'react-icons/fa';
+
 const iconMap = {
   // Stats & General
   'users': Users,
@@ -37,16 +46,44 @@ const iconMap = {
   'brain': Brain,
   'code': Code,
   'calendar': Calendar,
-  // Tech Stack (fallback mappings)
-  'python': Terminal,
-  'java': Coffee,
+  
+  // FYP new icons
+  'globe': Globe,
+  'smartphone': Smartphone,
+  'wifi': Wifi,
+  'box': Box,
+  'shield': Shield,
+  'bar-chart': BarChart,
+  'headphones': Headphones,
+  'file-text': FileText,
+  'star': Star,
+  'lightbulb': Lightbulb,
+  'search': Search,
+  'settings': Settings,
+  'check-square': CheckSquare,
+  'monitor': Monitor,
+
+  // Tech Stack
+  'react': SiReact,
+  'nextjs': SiNextdotjs,
+  'typescript': SiTypescript,
+  'nodejs': SiNodedotjs,
+  'python': SiPython,
+  'fastapi': SiFastapi,
+  'java': FaJava,
+  'springboot': SiSpringboot,
+  'flutter': SiFlutter,
+  'postgresql': SiPostgresql,
+  'mongodb': SiMongodb,
+  'docker': SiDocker,
+  'kubernetes': SiKubernetes,
+  'aws': FaAws,
+  'openai': Brain,
+  
+  // Fallbacks
   'cpp': Binary,
   'javascript': Code,
-  'react': Atom,
-  'nodejs': Server,
-  'mongodb': Database,
   'mysql': Database,
-  'aws': Cloud,
   'azure': CloudLightning
 };
 

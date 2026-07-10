@@ -22,6 +22,7 @@ import AboutUsPage from './components/AboutUsPage';
 import CareersPage from './components/CareersPage';
 import ContactPage from './components/ContactPage';
 import AdminEnquiries from './components/AdminEnquiries';
+import FinalYearProjectPage from './components/FinalYearProjectPage';
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -68,6 +69,11 @@ export default function App() {
           <CareersPage />
         ) : activePage === 'contactus' ? (
           <ContactPage />
+        ) : activePage === 'final-year-projects' ? (
+          <FinalYearProjectPage onApplyNow={() => {
+            setActivePage('contactus');
+            window.scrollTo(0, 0);
+          }} />
         ) : activePage === 'admin' ? (
           <AdminEnquiries />
         ) : null}

@@ -4,63 +4,81 @@ import { Linkedin, Github, Twitter } from './Icons';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200 pt-16 pb-8">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-        <div className="flex flex-col items-start">
+    <footer className="bg-[#0f172a] border-t border-slate-800 pt-16 pb-8 text-slate-300">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
+        <div className="lg:col-span-2 flex flex-col items-start">
           <div className="flex items-center mb-4">
-            <img src={logo} alt="Scorpy Tech Logo" className="h-20 w-auto object-contain scale-125 origin-left" />
+            <img src={logo} alt="Scorpy Tech Logo" className="h-20 w-auto object-contain scale-125 origin-left filter brightness-0 invert" />
           </div>
-          <p className="text-gray-600 mb-6 max-w-sm">
-            Empowering future software engineers and tech leaders with practical learning pathways, live mentor support, and verified project experience.
+          <p className="text-slate-400 mb-6 text-sm max-w-sm leading-relaxed">
+            Empowering students with innovative projects and expert guidance to build a better tomorrow.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-600 shadow-sm hover:text-primary transition-colors border border-gray-100">
-              <Linkedin size={20} />
+            <a href="#" className="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 shadow-sm hover:text-white hover:bg-blue-600 transition-all border border-slate-700">
+              <Linkedin size={16} />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-600 shadow-sm hover:text-primary transition-colors border border-gray-100">
-              <Github size={20} />
+            <a href="#" className="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 shadow-sm hover:text-white hover:bg-blue-600 transition-all border border-slate-700">
+              <Github size={16} />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-600 shadow-sm hover:text-primary transition-colors border border-gray-100">
-              <Twitter size={20} />
+            <a href="#" className="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 shadow-sm hover:text-white hover:bg-blue-600 transition-all border border-slate-700">
+              <Twitter size={16} />
             </a>
           </div>
         </div>
 
         <div>
-          <h3 className="font-heading font-bold text-lg mb-6 text-gray-900">Quick Links</h3>
-          <ul className="flex flex-col gap-3 text-gray-600">
-            <li><a href="#services" className="hover:text-primary transition-colors">Services</a></li>
-            <li><a href="#projects" className="hover:text-primary transition-colors">Projects</a></li>
-            <li><a href="#technologies" className="hover:text-primary transition-colors">Tech Stack</a></li>
-            <li><a href="#faqs" className="hover:text-primary transition-colors">FAQs</a></li>
+          <h3 className="font-bold text-base mb-6 text-white">Quick Links</h3>
+          <ul className="flex flex-col gap-3 text-sm text-slate-400">
+            <li><button onClick={() => window.scrollTo(0,0)} className="hover:text-blue-400 transition-colors">Home</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">Projects</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">Technologies</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">Services</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">Contact</button></li>
           </ul>
         </div>
 
         <div>
-          <h3 className="font-heading font-bold text-lg mb-6 text-gray-900">Subscribe to Newsletter</h3>
-          <p className="text-gray-600 mb-4">
-            Stay updated with our new batch openings, workshops, and placement guides.
-          </p>
-          <form className="flex flex-col sm:flex-row gap-2" onSubmit={(e) => e.preventDefault()}>
-            <input 
-              type="email" 
-              placeholder="Enter your email address" 
-              required 
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary bg-white"
-            />
-            <button type="submit" className="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary-dark transition-colors font-medium whitespace-nowrap">
-              Subscribe
-            </button>
-          </form>
+          <h3 className="font-bold text-base mb-6 text-white">Categories</h3>
+          <ul className="flex flex-col gap-3 text-sm text-slate-400">
+            <li><button className="hover:text-blue-400 transition-colors">AI & ML</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">IoT</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">Web Development</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">Mobile Apps</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">Data Science</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-bold text-base mb-6 text-white">Support</h3>
+          <ul className="flex flex-col gap-3 text-sm text-slate-400">
+            <li><button className="hover:text-blue-400 transition-colors">FAQ</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">Documentation</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">Terms & Conditions</button></li>
+            <li><button className="hover:text-blue-400 transition-colors">Privacy Policy</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-bold text-base mb-6 text-white">Contact Info</h3>
+          <ul className="flex flex-col gap-4 text-sm text-slate-400">
+            <li className="flex items-start gap-3">
+              <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <span>+91 87654 32109</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>info@scorpytech.com</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <svg className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Pune, Maharashtra, India</span>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm gap-4">
+      <div className="container mx-auto px-4 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-slate-500 text-xs gap-4">
         <p>&copy; {new Date().getFullYear()} Scorpy Tech. All rights reserved.</p>
-        <div className="flex gap-6">
-          <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-        </div>
       </div>
     </footer>
   );

@@ -7,6 +7,7 @@ export default function Header({ onApplyNow, onNavigate, activePage }) {
 
   const navLinks = [
     { name: 'Home', page: 'home' },
+    { name: 'Projects', page: 'final-year-projects' },
     { name: 'Services', page: 'services' },
     { name: 'About Us', page: 'aboutus' },
     { name: 'Industries', page: 'industries' },

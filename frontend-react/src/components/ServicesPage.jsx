@@ -16,42 +16,42 @@ const ServicesPage = () => {
   const servicesData = [
     {
       title: "Software Development",
-      icon: <Code2 className="w-6 h-6 text-primary" strokeWidth={1.5} />,
+      icon: <Code2 className="w-6 h-6" strokeWidth={1.5} />,
       description: "Custom software solutions tailored to your business needs using modern technologies and agile methodologies."
     },
     {
       title: "Mobile App Development",
-      icon: <Smartphone className="w-6 h-6 text-primary" strokeWidth={1.5} />,
+      icon: <Smartphone className="w-6 h-6" strokeWidth={1.5} />,
       description: "Native and cross-platform mobile applications that deliver exceptional user experiences."
     },
     {
       title: "Cloud Solutions",
-      icon: <Cloud className="w-6 h-6 text-primary" strokeWidth={1.5} />,
+      icon: <Cloud className="w-6 h-6" strokeWidth={1.5} />,
       description: "Scalable, secure, and cost-effective cloud solutions to modernize your infrastructure."
     },
     {
       title: "AI & Data Solutions",
-      icon: <Brain className="w-6 h-6 text-primary" strokeWidth={1.5} />,
+      icon: <Brain className="w-6 h-6" strokeWidth={1.5} />,
       description: "Leverage the power of data, analytics, and AI to make smarter decisions and drive business growth."
     },
     {
       title: "Cybersecurity",
-      icon: <ShieldCheck className="w-6 h-6 text-primary" strokeWidth={1.5} />,
+      icon: <ShieldCheck className="w-6 h-6" strokeWidth={1.5} />,
       description: "Protect your business with end-to-end security solutions, risk assessments, and compliance services."
     },
     {
       title: "DevOps Services",
-      icon: <Settings className="w-6 h-6 text-primary" strokeWidth={1.5} />,
+      icon: <Settings className="w-6 h-6" strokeWidth={1.5} />,
       description: "Streamline your development and operations with CI/CD, automation, and enhanced collaboration."
     },
     {
       title: "Enterprise Solutions",
-      icon: <ShoppingCart className="w-6 h-6 text-primary" strokeWidth={1.5} />,
+      icon: <ShoppingCart className="w-6 h-6" strokeWidth={1.5} />,
       description: "Robust enterprise solutions to optimize operations, improve efficiency, and accelerate digital transformation."
     },
     {
       title: "IT Consulting",
-      icon: <LineChart className="w-6 h-6 text-primary" strokeWidth={1.5} />,
+      icon: <LineChart className="w-6 h-6" strokeWidth={1.5} />,
       description: "Strategic IT consulting to help you innovate, optimize, and achieve your business objectives faster."
     }
   ];
@@ -112,7 +112,7 @@ const ServicesPage = () => {
                 className="bg-white rounded-xl shadow-[0_4px_24px_-8px_rgba(0,0,0,0.08)] border border-gray-100 hover:shadow-xl transition-all duration-300 group flex flex-col h-full hover:-translate-y-1 p-8"
               >
                 <div className="flex items-center gap-4 mb-5">
-                  <div className="bg-blue-50 w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  <div className="text-primary bg-blue-50 w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                     {service.icon}
                   </div>
                   <h3 className="text-[1.1rem] font-bold text-gray-900 font-heading leading-snug">
