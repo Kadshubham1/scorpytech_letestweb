@@ -5,10 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 const slides = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80",
-    title1: "Empowering Transformation.",
-    title2: "Together.",
-    subtitle: "Scorpy Tech partners with organizations to accelerate innovation, modernize operations, and build future-ready businesses.",
+    image: "/hero-building.png",
+    title1: "BUILDING",
+    title2: "INNOVATION",
+    title3: "SHAPING TOMORROW",
+    subtitle: "Where technology meets innovation for a smarter tomorrow.",
     buttonText: "Explore Our Services",
   },
   {
@@ -100,6 +101,12 @@ const Hero = ({ onApplyNow }) => {
             >
               {slides[currentSlide].title1} <br />
               <span className="text-[#3B82F6]">{slides[currentSlide].title2}</span>
+              {slides[currentSlide].title3 && (
+                <>
+                  <br />
+                  <span>{slides[currentSlide].title3}</span>
+                </>
+              )}
             </motion.h1>
             
             <motion.p 

@@ -10,7 +10,7 @@ import Services from './components/Services';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import WhyChooseUs from './components/WhyChooseUs';
-import Partners from './components/Partners';
+
 import FAQ from './components/FAQ';
 import Blogs from './components/Blogs';
 import Newsletter from './components/Newsletter';
@@ -49,7 +49,7 @@ export default function App() {
               setActivePage('contactus');
               window.scrollTo(0, 0);
             }} />
-            <Partners partners={mockData.partners} />
+
             <Services services={mockData.services} />
             <Statistics stats={mockData.stats} />
             <Technologies technologies={mockData.technologies} />

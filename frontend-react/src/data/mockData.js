@@ -30,7 +30,7 @@ export const mockData = {
     { id: 15, name: "OpenAI", icon_name: "openai" }
   ],
   projects: [
-    { id: 1, title: "AI Medical Assistant", badge: "AI/ML", description: "An intelligent chatbot diagnosing symptoms using NLP models.", tags: "Python, TensorFlow, React", image_url: "https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=400&q=80" },
+    { id: 1, title: "AI Medical Assistant", badge: "AI/ML", description: "Your Intelligent Healthcare Companion providing Symptom Checks, Health Insights, Medication Reminders, and Doctor Consultations.", tags: "Python, TensorFlow, React", image_url: "/ai-medical-robot.png" },
     { id: 2, title: "E-Commerce Microservices", badge: "Web Dev", description: "A scalable backend architecture for high-traffic retail.", tags: "Node.js, Docker, MongoDB", image_url: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80" },
     { id: 3, title: "Smart Home IoT App", badge: "Mobile", description: "Cross-platform mobile dashboard controlling IoT devices.", tags: "React Native, Firebase", image_url: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=400&q=80" }
   ],

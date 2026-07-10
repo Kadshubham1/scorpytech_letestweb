@@ -82,7 +82,7 @@ const Projects = ({ projects }) => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           <AnimatePresence mode="popLayout">
-            {filteredProjects.map(project => (
+            {filteredProjects.map((project, index) => (
               <motion.div 
                 layout
                 variants={item}
@@ -90,36 +90,54 @@ const Projects = ({ projects }) => {
                 animate="show"
                 exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
                 key={project.id} 
-                className="bg-white/80  border-2 border-slate-100 rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-[0_40px_80px_-20px_rgba(79,70,229,0.25)] hover:border-indigo-300 hover:-translate-y-3 transition-all duration-500 flex flex-col h-full group"
+                className={`group relative overflow-hidden rounded-[2rem] shadow-lg hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)] transition-all duration-500 h-[450px] ${index % 3 === 1 ? 'lg:translate-y-12' : ''}`}
               >
-                <div className="relative h-56 overflow-hidden">
-                  <img 
-                    src={project.image_url || 'https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=400&q=80'} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                    onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=400&q=80' }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
-                  
-                  <span className="absolute top-4 left-4 bg-white/20  text-gray-900 border border-white/30 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg">
-                    {project.badge}
-                  </span>
-                </div>
-                <div className="p-8 flex flex-col flex-grow relative bg-white">
-                  {/* Floating Action Button */}
-                  <div className="absolute -top-6 right-6 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-violet-600 transition-all duration-300 cursor-pointer">
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                  </div>
+                {/* Full Card Image Background */}
+                <img 
+                  src={project.image_url || 'https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=800&q=80'} 
+                  alt={project.title} 
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?auto=format&fit=crop&w=800&q=80' }}
+                />
+                
+                {/* Always-on gradient for readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/40 to-transparent"></div>
 
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">{project.title}</h3>
-                  <p className="text-[0.95rem] text-gray-9000 leading-relaxed mb-8 flex-grow font-medium">{project.description}</p>
-                  
-                  <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.tags.split(',').map((tag, idx) => (
-                      <span key={idx} className="bg-white text-xs font-bold text-slate-600 border border-slate-200 px-3 py-1.5 rounded-lg">
-                        {tag.trim()}
-                      </span>
-                    ))}
+                {/* Badge */}
+                <span className="absolute top-6 left-6 bg-white/20 backdrop-blur-md text-white border border-white/30 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-sm z-20">
+                  {project.badge}
+                </span>
+
+                {/* Content Container */}
+                <div className="absolute inset-0 p-8 flex flex-col justify-end z-10 transition-transform duration-500">
+                  <div className="transform translate-y-24 group-hover:translate-y-0 transition-transform duration-500 ease-out flex flex-col h-full justify-end">
+                    
+                    <h3 className="text-2xl font-bold text-white mb-2 shadow-sm drop-shadow-md">
+                      {project.title}
+                    </h3>
+                    
+                    {/* Glassmorphic Description Panel that appears on hover */}
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 mt-4 bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl">
+                      <p className="text-[0.95rem] text-gray-100 leading-relaxed mb-6 font-medium">
+                        {project.description}
+                      </p>
+                      
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.split(',').map((tag, idx) => (
+                          <span key={idx} className="bg-white/20 text-xs font-bold text-white px-3 py-1.5 rounded-lg border border-white/30">
+                            {tag.trim()}
+                          </span>
+                        ))}
+                      </div>
+                      
+                      {/* View Project Button */}
+                      <div className="mt-6 flex justify-end">
+                        <div className="w-10 h-10 bg-white text-[#005BAC] rounded-full flex items-center justify-center hover:bg-[#005BAC] hover:text-white transition-colors cursor-pointer shadow-lg">
+                          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
               </motion.div>

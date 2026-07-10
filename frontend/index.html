@@ -79,20 +79,46 @@
       
       <div class="hero-visual-content">
         <div class="hero-card-stack">
-          <div class="hero-card card-top glass-card">
+          <div class="hero-card card-top glass-card" style="padding-top: 0; padding-left: 0; padding-right: 0; overflow: hidden;">
             <div class="card-glow"></div>
-            <div class="card-header-visual">
-              <span class="pulse-dot"></span>
-              <span class="tag-status">Live Project</span>
+            <div style="background: var(--accent-primary); color: white; padding: 1rem 1.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid rgba(0,0,0,0.1);">
+              <h3 style="color: white; font-size: 1.05rem; margin: 0; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;">SCORPYTEH AI Medical Assistant</h3>
             </div>
-            <h3>Smart Attendance System</h3>
-            <p>Developing AI facial recognition pipeline using TensorFlow and React Native...</p>
-            <div class="progress-bar-container">
-              <div class="progress-bar" style="width: 82%"></div>
-            </div>
-            <div class="card-footer-visual">
-              <span>Progress: 82%</span>
-              <span class="members-avatars">🔥</span>
+            
+            <div style="display: flex; flex-direction: column; gap: 0.75rem; padding: 0 1.5rem 1.5rem 1.5rem;">
+              
+              <div style="display: flex; align-items: center; gap: 1rem; padding: 0.85rem 1rem; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 8px; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.borderColor='var(--accent-primary)'; this.style.backgroundColor='rgba(0,91,172,0.05)';" onmouseout="this.style.borderColor='var(--border-light)'; this.style.backgroundColor='var(--bg-secondary)';">
+                <div style="color: var(--accent-primary); display: flex; align-items: center; justify-content: center;"><i data-lucide="stethoscope"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; margin: 0; color: var(--text-primary); font-weight: 600;">Symptom Check</h4>
+                  <p style="font-size: 0.85rem; margin: 0; color: var(--text-secondary);">Analyze your symptoms</p>
+                </div>
+              </div>
+              
+              <div style="display: flex; align-items: center; gap: 1rem; padding: 0.85rem 1rem; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 8px; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.borderColor='var(--accent-primary)'; this.style.backgroundColor='rgba(0,91,172,0.05)';" onmouseout="this.style.borderColor='var(--border-light)'; this.style.backgroundColor='var(--bg-secondary)';">
+                <div style="color: var(--accent-primary); display: flex; align-items: center; justify-content: center;"><i data-lucide="heart-pulse"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; margin: 0; color: var(--text-primary); font-weight: 600;">Health Insights</h4>
+                  <p style="font-size: 0.85rem; margin: 0; color: var(--text-secondary);">Get personalized health insights</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 1rem; padding: 0.85rem 1rem; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 8px; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.borderColor='var(--accent-primary)'; this.style.backgroundColor='rgba(0,91,172,0.05)';" onmouseout="this.style.borderColor='var(--border-light)'; this.style.backgroundColor='var(--bg-secondary)';">
+                <div style="color: var(--accent-primary); display: flex; align-items: center; justify-content: center;"><i data-lucide="pill"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; margin: 0; color: var(--text-primary); font-weight: 600;">Medication Reminder</h4>
+                  <p style="font-size: 0.85rem; margin: 0; color: var(--text-secondary);">Never miss your medicine</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 1rem; padding: 0.85rem 1rem; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 8px; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.borderColor='var(--accent-primary)'; this.style.backgroundColor='rgba(0,91,172,0.05)';" onmouseout="this.style.borderColor='var(--border-light)'; this.style.backgroundColor='var(--bg-secondary)';">
+                <div style="color: var(--accent-primary); display: flex; align-items: center; justify-content: center;"><i data-lucide="user-round"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem; margin: 0; color: var(--text-primary); font-weight: 600;">Doctor Consultation</h4>
+                  <p style="font-size: 0.85rem; margin: 0; color: var(--text-secondary);">Connect with specialist</p>
+                </div>
+              </div>
+
             </div>
           </div>
           <div class="hero-card card-bottom glass-card">
