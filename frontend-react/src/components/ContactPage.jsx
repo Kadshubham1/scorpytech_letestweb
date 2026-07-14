@@ -247,10 +247,11 @@ const ContactPage = () => {
                       className="w-full bg-white border border-gray-200 rounded-md px-4 py-3.5 text-sm focus:outline-none focus:border-[#005BAC] focus:ring-1 focus:ring-[#005BAC] transition-colors text-gray-700"
                     >
                       <option value="">Service Interested In</option>
-                      <option value="Web Development">Web Development</option>
-                      <option value="Mobile Apps">Mobile Apps</option>
+                      <option value="Custom Software Development">Custom Software Development</option>
+                      <option value="AI & Machine Learning">AI & Machine Learning Solutions</option>
+                      <option value="Cloud & DevOps">Cloud & DevOps Solutions</option>
+                      <option value="Mobile Engineering">Enterprise Mobile Apps</option>
                       <option value="UI/UX Design">UI/UX Design</option>
-                      <option value="Digital Marketing">Digital Marketing</option>
                       <option value="Other">Other</option>
                     </select>
                   </div>

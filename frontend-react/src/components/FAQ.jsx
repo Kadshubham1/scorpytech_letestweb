@@ -13,7 +13,7 @@ const FAQ = ({ faqs }) => {
           <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
             Frequently Asked <span className="text-blue-600">Questions</span>
           </h2>
-          <p className="text-gray-9000">Quick answers to clear all your queries regarding certificates, tools, and schedules.</p>
+          <p className="text-gray-600">Quick answers to help you understand our software patterns, system architectures, and client engagement models.</p>
         </div>
 
         <div className="space-y-4">
@@ -32,7 +32,7 @@ const FAQ = ({ faqs }) => {
                   className="faq-drawer overflow-hidden bg-white/50"
                   style={{ maxHeight: isOpen ? '200px' : '0' }}
                 >
-                  <p className="p-6 text-sm text-gray-9000 leading-relaxed border-t border-slate-100">
+                  <p className="p-6 text-sm text-gray-600 leading-relaxed border-t border-slate-100">
                     {faq.answer}
                   </p>
                 </div>

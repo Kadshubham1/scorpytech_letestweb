@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { renderIcon } from './Icons';
-import { ChevronDown, ArrowRight, CheckCircle, GraduationCap, Code } from 'lucide-react';
+import { ChevronDown, ArrowRight, CheckCircle, Briefcase, Code } from 'lucide-react';
 import { mockData } from '../data/mockData';
 
 const container = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.1 } } };
@@ -29,7 +29,7 @@ export default function FinalYearProjectPage({ onApplyNow }) {
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
       
       {/* 1. Hero Section */}
-      <section className="relative pt-24 pb-20 lg:pt-32 lg:pb-28 overflow-hidden bg-white">
+      <section className="relative pt-32 pb-20 lg:pt-36 lg:pb-28 overflow-hidden bg-white">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
           <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
           <div className="absolute top-40 -left-40 w-96 h-96 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
@@ -38,41 +38,41 @@ export default function FinalYearProjectPage({ onApplyNow }) {
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
             <span className="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 text-xs font-bold tracking-wider uppercase mb-4 border border-blue-100">
-              #1 Final Year Project Partner
+              #1 ENTERPRISE SOFTWARE PARTNER
             </span>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-6 text-slate-900 tracking-tight">
-              Build Your Final Year Project with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Expert Guidance</span>
+              Build Your Next-Gen Enterprise Solution with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">ScorpyTech</span>
             </h1>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl">
-              We provide innovative project ideas with complete development support, documentation, research guidance and implementation assistance.
+              We deliver tailormade Artificial Intelligence models, scalable cloud infrastructures, and high-performance custom software systems.
             </p>
             <div className="flex flex-wrap gap-4 mb-12">
               <button onClick={() => {
                 document.getElementById('fyp-projects')?.scrollIntoView({ behavior: 'smooth' });
               }} className="bg-blue-600 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30 flex items-center gap-2">
-                Explore Projects <ArrowRight size={18} />
+                Explore Case Studies <ArrowRight size={18} />
               </button>
               <button onClick={onApplyNow} className="bg-white text-blue-600 border border-blue-200 px-8 py-3.5 rounded-lg font-bold hover:bg-blue-50 transition-colors flex items-center gap-2">
-                <GraduationCap size={18} /> Talk to Expert
+                <Briefcase size={18} /> Talk to Expert
               </button>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-100">
               <div className="flex flex-col">
-                <div className="flex items-center gap-2 text-blue-600 mb-1"><CheckCircle size={20} /><span className="font-bold text-xl text-slate-900">500+</span></div>
+                <div className="flex items-center gap-2 text-blue-600 mb-1"><CheckCircle size={20} /><span className="font-bold text-xl text-slate-900">300+</span></div>
                 <span className="text-xs text-slate-500 font-medium">Projects Completed</span>
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center gap-2 text-blue-600 mb-1"><CheckCircle size={20} /><span className="font-bold text-xl text-slate-900">50+</span></div>
-                <span className="text-xs text-slate-500 font-medium">Expert Mentors</span>
+                <span className="text-xs text-slate-500 font-medium">Enterprise Partners</span>
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center gap-2 text-blue-600 mb-1"><CheckCircle size={20} /><span className="font-bold text-xl text-slate-900">100+</span></div>
-                <span className="text-xs text-slate-500 font-medium">Technologies</span>
+                <div className="flex items-center gap-2 text-blue-600 mb-1"><CheckCircle size={20} /><span className="font-bold text-xl text-slate-900">120+</span></div>
+                <span className="text-xs text-slate-500 font-medium">AI Models Deployed</span>
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center gap-2 text-blue-600 mb-1"><CheckCircle size={20} /><span className="font-bold text-xl text-slate-900">100%</span></div>
-                <span className="text-xs text-slate-500 font-medium">Satisfaction</span>
+                <div className="flex items-center gap-2 text-blue-600 mb-1"><CheckCircle size={20} /><span className="font-bold text-xl text-slate-900">98%</span></div>
+                <span className="text-xs text-slate-500 font-medium">Client Retention</span>
               </div>
             </div>
           </motion.div>
@@ -236,7 +236,7 @@ export default function FinalYearProjectPage({ onApplyNow }) {
       <section className="py-20 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4 tracking-tight">What Students Say</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4 tracking-tight">What Partners Say</h2>
             <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
           </div>
 
@@ -268,7 +268,7 @@ export default function FinalYearProjectPage({ onApplyNow }) {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 tracking-tight">Project Gallery</h2>
             <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
-            <p className="mt-4 text-slate-500">Glimpses of hardware and software implementations.</p>
+            <p className="mt-4 text-slate-500">Glimpses of modern architectures and software implementations.</p>
           </div>
 
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
@@ -331,8 +331,8 @@ export default function FinalYearProjectPage({ onApplyNow }) {
                 <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
               </div>
               <div>
-                <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-2">Ready to Build Your Final Year Project?</h2>
-                <p className="text-blue-100">Get expert guidance and create an innovative project that makes a difference.</p>
+                <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-2">Ready to Start Your Digital Transformation?</h2>
+                <p className="text-blue-100">Partner with our seasoned engineering teams to deploy production-ready AI and software solutions.</p>
               </div>
             </div>
             

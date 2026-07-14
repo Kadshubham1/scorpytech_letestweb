@@ -40,9 +40,9 @@ const Newsletter = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
             
             <div className="lg:col-span-7 space-y-4">
-              <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Stay Updated with Openings</h3>
+              <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Subscribe to Our Tech Newsletter</h3>
               <p className="text-indigo-100 text-[1.05rem] leading-relaxed max-w-md">
-                Subscribe to our newsletter to receive notification on new batch launches, technical workshops, and direct hiring slots.
+                Subscribe to receive the latest insights on enterprise AI, cloud architecture, and modern product engineering.
               </p>
             </div>
 

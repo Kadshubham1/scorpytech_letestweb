@@ -5,7 +5,7 @@ import { mockData } from './data/mockData';
 // Components
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Statistics from './components/Statistics';
+
 import Services from './components/Services';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
@@ -13,7 +13,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 
 import FAQ from './components/FAQ';
 import Blogs from './components/Blogs';
-import Newsletter from './components/Newsletter';
+
 import Footer from './components/Footer';
 import InternshipModal from './components/InternshipModal';
 import Industries from './components/Industries';
@@ -50,14 +50,15 @@ export default function App() {
               window.scrollTo(0, 0);
             }} />
 
-            <Services services={mockData.services} />
-            <Statistics stats={mockData.stats} />
+
+            <Services services={mockData.services} onNavigate={(page) => { setActivePage(page); window.scrollTo(0, 0); }} />
+            <Industries isHomePageSection={true} />
             <Technologies technologies={mockData.technologies} />
             <Projects projects={mockData.projects} />
             <WhyChooseUs testimonials={mockData.testimonials} />
             <FAQ faqs={mockData.faqs} />
             <Blogs blogs={mockData.blogs} />
-            <Newsletter />
+
           </>
         ) : activePage === 'industries' ? (
           <Industries />

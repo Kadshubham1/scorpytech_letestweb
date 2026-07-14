@@ -57,9 +57,9 @@ const ServicesPage = () => {
   ];
 
   return (
-    <div className="w-full bg-white min-h-screen pt-20">
+    <div className="w-full bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-[#020A1A] text-white overflow-hidden py-16 md:py-24">
+      <section className="relative bg-[#020A1A] text-white overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
         {/* Background Graphic */}
         <div 
           className="absolute inset-0 opacity-40 bg-cover bg-center"

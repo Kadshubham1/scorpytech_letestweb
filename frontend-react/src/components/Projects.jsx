@@ -35,10 +35,10 @@ const Projects = ({ projects }) => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
-            Featured Intern <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">Projects</span>
+            Featured Enterprise <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">Solutions</span>
           </h2>
-          <p className="text-gray-9000 text-lg leading-relaxed">
-            Witness the high-quality industrial systems engineered by our interns during their dynamic modules.
+          <p className="text-gray-600 text-lg leading-relaxed">
+            Witness the high-quality, production-ready systems engineered by our specialized development teams.
           </p>
         </motion.div>
 

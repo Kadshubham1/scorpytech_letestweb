@@ -23,7 +23,7 @@ const AboutUsPage = () => {
               </h1>
               
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Scorpy Tech is a next-generation technology company dedicated to bridging the gap between academia and industry. We empower future tech leaders through hands-on internships and training, while partnering with organizations to build innovative, future-ready digital solutions.
+                Scorpy Tech is a premier next-generation technology company specializing in custom software development, cloud computing, and artificial intelligence solutions. We partner with forward-thinking enterprises and fast-growing startups to engineer robust, scalable, and secure digital products that drive measurable business impact.
               </p>
               
               <div className="w-12 h-1 bg-[#005BAC]"></div>
@@ -61,13 +61,13 @@ const AboutUsPage = () => {
               </h2>
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  Scorpy Tech was founded with a singular, driving vision: to bridge the critical gap between academic learning and the fast-paced, ever-evolving demands of the tech industry. We recognized that while traditional education provides a strong theoretical foundation, emerging professionals often need practical, hands-on experience to truly thrive in the workforce. Born out of a passion for innovation and a commitment to education, our journey began with the goal of creating an ecosystem where aspiring technologists could gain the real-world skills necessary to launch and sustain successful careers.
+                  Scorpy Tech was founded with a singular, driving vision: to accelerate digital transformation through cutting-edge engineering and next-generation innovation. We recognized that in a rapidly evolving marketplace, enterprises require more than just off-the-shelf software; they need tailormade, intelligent systems built to adapt and scale. Born out of a passion for technical excellence and client success, our journey began with the goal of creating an elite team of engineers, data scientists, and architects dedicated to solving complex operational challenges.
                 </p>
                 <p>
-                  Today, we are proud to offer next-generation technical internships and comprehensive training programs that are meticulously designed to accelerate career growth. At Scorpy Tech, we go beyond conventional teaching methods by immersing our participants in industry-focused, real-world projects. From intensive Artificial Intelligence and Machine Learning workshops to modern software engineering, our curriculum reflects the latest industry standards. Guided by expert mentorship, our trainees are empowered to tackle complex problems, build robust portfolios, and develop the confidence needed to excel in highly competitive environments.
+                  Today, we are proud to offer end-to-end software development and AI engineering services designed to drive exponential business growth. At Scorpy Tech, we go beyond standard implementations by integrating advanced Generative AI, machine learning pipelines, and robust cloud-native architectures into our clients' core ecosystems. From strategic consulting to full-scale custom software deployment, our methodologies ensure that we deliver secure, high-performing systems that meet the most demanding enterprise standards.
                 </p>
                 <p>
-                  As we look to the future, our mission remains steadfast: empowering transformation, together. We are more than just a training platform; we are a dedicated partner in your professional journey. By continuously collaborating with industry leaders to accelerate innovation and build future-ready solutions, we ensure our community always stays ahead of the curve. At Scorpy Tech, we are deeply committed to nurturing the next generation of tech leaders—individuals who are not only equipped to navigate the challenges of tomorrow but are also inspired to shape the future of technology.
+                  As we look to the future, our mission remains steadfast: empowering business transformation through technical innovation. We are more than just a software vendor; we are a strategic partner in your long-term success. By continuously investing in R&D and mastering emerging platforms like LLMs, advanced IoT, and serverless architectures, we guarantee that our clients stay at the absolute forefront of their industries. At Scorpy Tech, we are committed to building the future of enterprise software—delivering today the technologies that will define tomorrow.
                 </p>
               </div>
             </div>
@@ -177,9 +177,9 @@ const AboutUsPage = () => {
               <div className="flex flex-col items-center text-center">
                 <div className="w-6 h-6 rounded-full bg-[#005BAC] border-4 border-blue-100 mb-6 shadow-sm"></div>
                 <div className="text-[#005BAC] font-bold text-lg mb-2">2022</div>
-                <h4 className="font-bold text-gray-900 mb-3">Empowering Students</h4>
+                <h4 className="font-bold text-gray-900 mb-3">Global Expansion</h4>
                 <p className="text-gray-600 text-sm leading-relaxed max-w-[200px]">
-                  Bridged the academic gap by introducing internships, training, and research guidance.
+                  Expanded engineering services to international enterprise markets and cloud integrations.
                 </p>
               </div>
 
